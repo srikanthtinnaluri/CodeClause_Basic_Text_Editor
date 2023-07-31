@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic Text Editor</title>
+	<!--Internal CSS start-->
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f5f5f5;
+			color: #333333;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			padding: 40px;
+			text-align: center;
+			color:#6fa775;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		section {
+			padding: 2% 5%;
+			height: 100vh;
+		}
+
+		.flex-box {
+			display: flex;
+			justify-content: center;
+		}
+
+		/* Button Styles */
+		button {
+			margin: 5px;
+			border: 1px solid#6fa775 !important;
+			color: #957dad !important;
+			background-color: transparent;
+			padding: 8px 15px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		button:hover {
+			background-color:#6fa775!important;
+			color: #ffffff !important;
+		}
+
+		textarea {
+			padding: 3%;
+			border: 2px solid #6fa775;
+			border-radius: 5px;
+			width: 100%;
+			resize: vertical;
+		}
+
+		h6 {
+			text-align: center;
+			color: #888888;
+			font-size: 12px;
+		}
+	</style>
+	<!--Internal CSS End-->
+</head>
+<!--Body start-->
+
+<body>
+	<section>
+		<h1 class="shadow-sm">BASIC TEXT EDITOR</h1>
+		<div class="flex-box">
+			<div class="row">
+				<div class="col">
+					<!-- Adding different buttons for different functionality -->
+					<!-- onclick attribute is added to give button a work to do when it is clicked -->
+					<button type="button" onclick="f1()">Bold</button>
+					<button type="button" onclick="f2()">Italic</button>
+					<button type="button" onclick="f3()"><i class="fas fa-align-left"></i></button>
+					<button type="button" onclick="f4()"><i class="fas fa-align-center"></i></button>
+					<button type="button" onclick="f5()"><i class="fas fa-align-right"></i></button>
+					<button type="button" onclick="f6()">Upper Case</button>
+					<button type="button" onclick="f7()">Lower Case</button>
+					<button type="button" onclick="f8()">Capitalize</button>
+					<button type="button" onclick="f9()">Clear Text</button>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3 col-sm-3"></div>
+			<div class="col-md-6 col-sm-9">
+				<div class="flex-box">
+					<textarea id="textarea1" class="input shadow" name="name" rows="15" cols="100" placeholder="Your text here"></textarea>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</section>
+	<br>
+
+	<!--External JavaScript file-->
+	<script src="home.js"></script>
+</body>
+
+</html>
